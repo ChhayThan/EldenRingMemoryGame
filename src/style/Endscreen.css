@@ -1,0 +1,29 @@
+div.endScreenContainer {
+  background-color: #dde6ed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  margin: 1em;
+
+  border: none;
+  border-radius: 10px;
+}
+
+button.restartBtn {
+  background-color: #526d82;
+  color: white;
+  width: 10em;
+  padding: 1em;
+  align-self: center;
+
+  border: none;
+  border-radius: 10px;
+}
+button.restartBtn:hover {
+  background-color: #27374d;
+}
+button.restartBtn:active {
+  transform: translateY(2px);
+}

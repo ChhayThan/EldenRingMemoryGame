@@ -1,6 +1,6 @@
 import "../style/Rules.css";
 
-export default function Rules() {
+export default function Rules({ handleStart }) {
   return (
     <div className="rulesContainer">
       <h2>Rules of this memory game!</h2>
@@ -16,7 +16,9 @@ export default function Rules() {
         <li>When you're ready, click Start!</li>
       </ul>
 
-      <button className="startBtn">Start Game!</button>
+      <button className="startBtn" onClick={() => handleStart("game")}>
+        Start Game!
+      </button>
     </div>
   );
 }
