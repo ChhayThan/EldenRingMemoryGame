@@ -12,6 +12,7 @@ div.endScreenContainer {
 }
 
 button.restartBtn {
+  margin-top: 10px;
   background-color: #526d82;
   color: white;
   width: 10em;
