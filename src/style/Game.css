@@ -1,0 +1,45 @@
+div.gameContainer {
+  display: flex;
+  flex-direction: column;
+}
+div.cardContainer {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.card {
+  width: 300px;
+  height: 200px;
+
+  padding: 10px;
+
+  background-color: #526d82;
+  border-radius: 10px;
+
+  color: #dde6ed;
+  text-align: center;
+}
+div.loading {
+  margin-top: 5em;
+  font-size: 2em;
+  color: rgb(190, 159, 66);
+}
+
+div.card img {
+  width: 100%;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+div.card:hover {
+  transform: scale(1.1);
+  background-color: #9db2bf;
+  transition: transform ease-in-out 100ms;
+}
+
+div.card:active {
+  transform: translateY(2px);
+  background-color: #dde6ed;
+}

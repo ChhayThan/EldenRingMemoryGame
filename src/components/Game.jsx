@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Scoreboard from "./Scoreboard";
+import "../style/Game.css";
 
 export default function Game({
   bestScoreboard,
@@ -75,6 +76,9 @@ export default function Game({
       <Scoreboard currentScore={currentScoreboard} bestScore={bestScoreboard} />
 
       <div className="cardContainer">
+        {characterArray.length === 0 && (
+          <div className="loading">Loading...</div>
+        )}
         {characterArray.length > 0 &&
           characterArray.map((character) => (
             <div key={character.id} className="card">
